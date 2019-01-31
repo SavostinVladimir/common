@@ -1,6 +1,12 @@
 package common
 
-import "math"
+import (
+	"math"
+)
+
+func IsInteger(x float64) bool {
+	return x == math.Trunc(x)
+}
 
 func RoundFloat(x float64, prec int) float64 {
 	var rounder float64
