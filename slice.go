@@ -11,6 +11,16 @@ func In(source []int, digit int) bool {
 	return result[digit]
 }
 
+//InString - возвращает true,  если в проверяемом срезе есть искомая строка
+func InString(source []string, subStr string) bool {
+	for _, s := range source {
+		if subStr == s {
+			return true
+		}
+	}
+	return false
+}
+
 //MaxInt - возвращает максимальное число из среза
 func MaxInt(source []int) (max int) {
 	for _, e := range source {
